@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script> <!-- Lucide Icons -->
 </head>
 <body class="bg-gray-100 text-gray-900">
 
     <div class="max-w-4xl mx-auto p-6">
         <!-- Header & Bio -->
         <div class="bg-white p-6 rounded-xl shadow-lg text-center">
-            <h1 class="text-3xl font-bold text-blue-600">Welcome to My Portfolio</h1>
             <p>
                 I am a Master’s student at NC State University with a passion for 
                 <strong>software engineering and system security</strong>. As a <strong>software developer</strong>, 
@@ -22,7 +22,6 @@
                 I am always looking for new challenges where I can apply my expertise in 
                 <strong>software development, system security, and API design</strong> to create impactful, real-world solutions.
             </p>
-            
         </div>
 
         <!-- Project Categories -->
@@ -40,27 +39,54 @@
             <!-- Cybersecurity Card -->
             <div class="bg-white p-6 rounded-xl shadow-lg transform transition hover:scale-105">
                 <h3 class="text-xl font-semibold text-blue-600">Cybersecurity</h3>
-                <p class="text-gray-600 mt-2">Projects involving penetration testing, security reviews, vulnerability assessments, and secure coding practices.</p>
+                <p class="text-gray-600 mt-2">
+                    Projects involving penetration testing, security reviews, vulnerability assessments, and secure coding practices.
+                </p>
                 <a href="#" class="mt-4 inline-block text-blue-500 font-medium hover:underline">View Projects →</a>
             </div> 
 
             <!-- Research Card -->
             <div class="bg-white p-6 rounded-xl shadow-lg transform transition hover:scale-105">
                 <h3 class="text-xl font-semibold text-purple-600">Research</h3>
-                <p class="text-gray-600 mt-2">Exploring privacy measures, load balancing through in-depth research.</p>
+                <p class="text-gray-600 mt-2">
+                    Exploring privacy measures, load balancing through in-depth research.
+                </p>
                 <a href="#" class="mt-4 inline-block text-purple-500 font-medium hover:underline">View Projects →</a>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
+    <!-- Footer with Icons -->
     <footer class="bg-gray-800 text-white text-center p-6 mt-12">
         <p class="text-lg font-semibold">Contact Me</p>
-        <p>Email: <a href="mailto:shashank.um.xl@gmail.com" class="text-blue-400 hover:underline">shashank.um.xl@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/shashank-udyavar-madan" target="_blank" class="text-blue-400 hover:underline">linkedin.com/in/shashank-udyavar-madan</a></p>
-        <p>GitHub: <a href="https://github.com/shashank-madan" target="_blank" class="text-blue-400 hover:underline">github.com/shashank-madan</a></p>
-        <p class="text-sm mt-4">&copy; 2025 Your Name. All Rights Reserved.</p>
+        
+        <div class="flex flex-col items-center space-y-3 mt-4">
+            <!-- Email -->
+            <a href="mailto:shashank.um.xl@gmail.com" class="flex items-center space-x-2 text-blue-400 hover:text-yellow-400 transition">
+                <i data-lucide="mail"></i>
+                <span>Email: shashank.um.xl@gmail.com</span>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/shashank-udyavar-madan" target="_blank" class="flex items-center space-x-2 text-blue-400 hover:text-yellow-400 transition">
+                <i data-lucide="linkedin"></i>
+                <span>LinkedIn: linkedin.com/in/shashank-udyavar-madan</span>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/shashank-madan" target="_blank" class="flex items-center space-x-2 text-blue-400 hover:text-yellow-400 transition">
+                <i data-lucide="github"></i>
+                <span>GitHub: github.com/shashank-madan</span>
+            </a>
+        </div>
+
+        <p class="text-sm mt-4">&copy; 2025 Shashank Udyavar Madan. All Rights Reserved.</p>
     </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
 
 </body>
 </html>
