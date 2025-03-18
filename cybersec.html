@@ -5,9 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cybersecurity Projects</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script> <!-- Lucide Icons -->
+    <style>
+        /* Ensures the content takes full height */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        .wrapper {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex: 1; /* Takes up remaining space */
+        }
+    </style>
 </head>
 <body class="bg-gray-100 text-gray-900">
-
+<div class="wrapper">
     <div class="max-w-4xl mx-auto p-6">
         <h1 class="text-3xl font-bold text-center text-blue-600">Cybersecurity Projects</h1>
 
@@ -48,10 +64,45 @@
             </div>
         </div>
 
-        <div class="mt-6 text-center">
-            <a href="index.html" class="text-blue-500 hover:underline">← Back to Portfolio</a>
-        </div>
+                 <!-- Navigation Links -->
+                 <div class="mt-6 text-center flex justify-center space-x-8">
+                    <a href="dev.html" class="text-blue-500 hover:underline">Software Development</a>
+                    <a href="index.html" class="text-blue-500 hover:underline">Back to Portfolio</a>
+                    <a href="research.html" class="text-blue-500 hover:underline">Research</a>
+                </div>
     </div>
+</div>
+
+    <!-- Sticky Footer -->
+    <footer class="bg-gray-800 text-white text-center p-6">
+        <p class="text-lg font-semibold mb-3">Contact Me</p>
+        
+        <div class="flex justify-center space-x-6">
+            <!-- Email -->
+            <a href="mailto:shashank.um.xl@gmail.com" class="flex items-center space-x-2 text-blue-400 hover:text-yellow-400 transition">
+                <i data-lucide="mail"></i>
+                <span>Email</span>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/shashank-udyavar-madan" target="_blank" class="flex items-center space-x-2 text-blue-400 hover:text-yellow-400 transition">
+                <i data-lucide="linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/shashank-madan" target="_blank" class="flex items-center space-x-2 text-blue-400 hover:text-yellow-400 transition">
+                <i data-lucide="github"></i>
+                <span>GitHub</span>
+            </a>
+        </div>
+
+        <p class="text-sm mt-4">&copy; Shashank Udyavar Madan. All Rights Reserved.</p>
+    </footer>
+    <!-- Initialize Lucide Icons -->
+<script>
+    lucide.createIcons();
+</script>
 
 </body>
 </html>

@@ -6,91 +6,110 @@
     <title>My Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script> <!-- Lucide Icons -->
+    <style>
+        /* Ensures the content takes full height */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        .wrapper {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex: 1; /* Takes up remaining space */
+        }
+    </style>
 </head>
 <body class="bg-gray-100 text-gray-900">
 
-    <!-- Name Header -->
-    <div class="text-center py-8">
-        <h1 class="text-4xl font-bold text-gray-900">Shashank Udyavar Madan</h1>
-    </div>
-
-    <div class="max-w-4xl mx-auto p-6">
-        <!-- Header & Bio -->
-        <div class="bg-white p-6 rounded-xl shadow-lg text-center">
-            <p>
-                I am a Master’s student at NC State University with a passion for 
-                <strong>software engineering and system security</strong>. As a <strong>software developer</strong>, 
-                I focus on designing and building <strong>efficient, reliable, and secure applications</strong> 
-                while applying strong <strong>engineering principles</strong> to solve complex problems. 
-                With a solid foundation in <strong>cybersecurity</strong>, I strive to develop software that 
-                is not only high-performing but also resilient to security threats. 
-                I am always looking for new challenges where I can apply my expertise in 
-                <strong>software development, system security, and API design</strong> to create impactful, real-world solutions.
-            </p>
+<div class="wrapper">
+    <div class="content">
+        <!-- Name Header -->
+        <div class="text-center py-8">
+            <h1 class="text-4xl font-bold text-gray-900">Shashank Udyavar Madan</h1>
         </div>
 
-        <!-- Project Categories -->
-        <h2 class="text-2xl font-semibold mt-8 text-center">My Projects</h2>
+        <div class="max-w-4xl mx-auto p-6">
+            <!-- Header & Bio -->
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                <p>
+                    I am a Master’s student at NC State University with a passion for 
+                    <strong>software engineering and system security</strong>. As a <strong>software developer</strong>, 
+                    I focus on designing and building <strong>efficient, reliable, and secure applications</strong> 
+                    while applying strong <strong>engineering principles</strong> to solve complex problems. 
+                    With a solid foundation in <strong>cybersecurity</strong>, I strive to develop software that 
+                    is not only high-performing but also resilient to security threats. 
+                    I am always looking for new challenges where I can apply my expertise in 
+                    <strong>software development, system security, and API design</strong> to create impactful, real-world solutions.
+                </p>
+            </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
+            <!-- Project Categories -->
+            <h2 class="text-2xl font-semibold mt-8 text-center">My Projects</h2>
 
-            <!-- Software Development Card -->
-            <a href="dev.html" class="block">
-                <div class="bg-white p-6 rounded-xl shadow-lg transform transition hover:scale-105 cursor-pointer">
-                    <h3 class="text-xl font-semibold text-green-600">Software Development</h3>
-                    <p class="text-gray-600 mt-2">Full-stack applications, backend APIs, and cloud-based solutions.</p>
-                </div>
-            </a>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
 
-            <!-- Cybersecurity Card -->
-            <a href="cybersec.html" class="block">
-                <div class="bg-white p-6 rounded-xl shadow-lg transform transition hover:scale-105 cursor-pointer">
-                    <h3 class="text-xl font-semibold text-blue-600">Cybersecurity</h3>
-                    <p class="text-gray-600 mt-2">Penetration testing, security reviews, vulnerability assessments.</p>
-                </div>
-            </a>
-
-            <!-- Research Card -->
-            <a href="research.html" class="block">
-                <div class="bg-white p-6 rounded-xl shadow-lg transform transition hover:scale-105 cursor-pointer">
-                    <h3 class="text-xl font-semibold text-purple-600">Research</h3>
-                    <p class="text-gray-600 mt-2">Exploring privacy measures and security-focused load balancing.</p>
-                </div>
-            </a>
-        </div>
-    </div>
-
-        <!-- Footer with Icons -->
-        <footer class="bg-gray-800 text-white text-center p-6 mt-12">
-            <p class="text-lg font-semibold mb-3">Contact Me</p>
-            
-            <div class="flex justify-center space-x-6">
-                <!-- Email -->
-                <a href="mailto:shashank.um.xl@gmail.com" class="flex items-center space-x-2 text-blue-400 hover:text-yellow-400 transition">
-                    <i data-lucide="mail"></i>
-                    <span>Email</span>
+                <!-- Software Development Card -->
+                <a href="dev.html" class="block">
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform transition hover:scale-105 cursor-pointer">
+                        <h3 class="text-xl font-semibold text-green-600">Software Development</h3>
+                        <p class="text-gray-600 mt-2">Full-stack applications, backend APIs, and cloud-based solutions.</p>
+                    </div>
                 </a>
-    
-                <!-- LinkedIn -->
-                <a href="https://linkedin.com/in/shashank-udyavar-madan" target="_blank" class="flex items-center space-x-2 text-blue-400 hover:text-yellow-400 transition">
-                    <i data-lucide="linkedin"></i>
-                    <span>LinkedIn</span>
+
+                <!-- Cybersecurity Card -->
+                <a href="cybersec.html" class="block">
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform transition hover:scale-105 cursor-pointer">
+                        <h3 class="text-xl font-semibold text-blue-600">Cybersecurity</h3>
+                        <p class="text-gray-600 mt-2">Penetration testing, security reviews, vulnerability assessments.</p>
+                    </div>
                 </a>
-    
-                <!-- GitHub -->
-                <a href="https://github.com/shashank-madan" target="_blank" class="flex items-center space-x-2 text-blue-400 hover:text-yellow-400 transition">
-                    <i data-lucide="github"></i>
-                    <span>GitHub</span>
+
+                <!-- Research Card -->
+                <a href="research.html" class="block">
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform transition hover:scale-105 cursor-pointer">
+                        <h3 class="text-xl font-semibold text-purple-600">Research</h3>
+                        <p class="text-gray-600 mt-2">Exploring privacy measures and security-focused load balancing.</p>
+                    </div>
                 </a>
             </div>
-    
-            <p class="text-sm mt-4">&copy; Shashank Udyavar Madan. All Rights Reserved.</p>
-        </footer>
-    
-        <!-- Initialize Lucide Icons -->
-        <script>
-            lucide.createIcons();
-        </script>
+        </div>
+    </div>
+
+    <!-- Sticky Footer -->
+    <footer class="bg-gray-800 text-white text-center p-6">
+        <p class="text-lg font-semibold mb-3">Contact Me</p>
+        
+        <div class="flex justify-center space-x-6">
+            <!-- Email -->
+            <a href="mailto:shashank.um.xl@gmail.com" class="flex items-center space-x-2 text-blue-400 hover:text-yellow-400 transition">
+                <i data-lucide="mail"></i>
+                <span>Email</span>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/shashank-udyavar-madan" target="_blank" class="flex items-center space-x-2 text-blue-400 hover:text-yellow-400 transition">
+                <i data-lucide="linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/shashank-madan" target="_blank" class="flex items-center space-x-2 text-blue-400 hover:text-yellow-400 transition">
+                <i data-lucide="github"></i>
+                <span>GitHub</span>
+            </a>
+        </div>
+
+        <p class="text-sm mt-4">&copy; Shashank Udyavar Madan. All Rights Reserved.</p>
+    </footer>
+</div>
+
+<!-- Initialize Lucide Icons -->
+<script>
+    lucide.createIcons();
+</script>
 
 </body>
 </html>
