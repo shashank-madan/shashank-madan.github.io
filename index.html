@@ -35,7 +35,7 @@
             <!-- Header & Bio -->
             <div class="bg-white p-6 rounded-xl shadow-lg text-center">
                 <p>
-                    I am a Master’s student at NC State University with a passion for 
+                    I am a Master's student at NC State University with a passion for 
                     <strong>software engineering and system security</strong>. As a <strong>software developer</strong>, 
                     I focus on designing and building <strong>efficient, reliable, and secure applications</strong> 
                     while applying strong <strong>engineering principles</strong> to solve complex problems. 
@@ -44,6 +44,14 @@
                     I am always looking for new challenges where I can apply my expertise in 
                     <strong>software development, system security, and API design</strong> to create impactful, real-world solutions.
                 </p>
+                
+                <!-- CV Button -->
+                <div class="mt-6">
+                    <a href="cv.pdf" target="_blank" class="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition">
+                        <i data-lucide="file-text" class="mr-2 h-5 w-5"></i>
+                        View Full CV
+                    </a>
+                </div>
             </div>
 
             <!-- Project Categories -->
@@ -72,6 +80,84 @@
                     <div class="bg-white p-6 rounded-xl shadow-lg transform transition hover:scale-105 cursor-pointer">
                         <h3 class="text-xl font-semibold text-purple-600">Research</h3>
                         <p class="text-gray-600 mt-2">Exploring privacy measures and security-focused load balancing.</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Work Experience Section with ACTUAL EXPERIENCE -->
+            <h2 class="text-2xl font-semibold mt-8 text-center">Work Experience</h2>
+            <div class="mt-6 bg-white p-6 rounded-xl shadow-lg">
+                <div class="space-y-6">
+                    <!-- Software Engineer Intern at Zebra Technologies -->
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <h3 class="text-xl font-semibold">Software Engineer Intern</h3>
+                        <p class="text-gray-600">Zebra Technologies • Bengaluru, India • Jan 2023 - Jul 2023</p>
+                        <ul class="mt-2 list-disc list-inside text-gray-700">
+                            <li>Developed mobile application modules for Android, iOS, and Flutter, adopted across all Zebra mobile apps for authorization, authentication, and SSO (Single Sign-On).</li>
+                            <li>Created a POC (Proof of Concept) for UI automation using Robot Framework, later adopted by the User Management team, reducing manual testing time by 40%.</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Teaching Assistant at PES University -->
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <h3 class="text-xl font-semibold">Teaching Assistant, Computer Network Security</h3>
+                        <p class="text-gray-600">PES University • Bengaluru, India • Aug 2022 - Jan 2023</p>
+                        <ul class="mt-2 list-disc list-inside text-gray-700">
+                            <li>Led hands-on lab sessions on network security attacks and defenses, including configuring firewalls, penetration testing, and packet sniffing with tools like Wireshark.</li>
+                            <li>Delivered feedback on assignments and exams in cryptography, secure network protocols, and coding practices, while mentoring students on network security troubleshooting and developing lab exercises for key security concepts.</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Software Developer Intern at Jeev Lifeworks -->
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <h3 class="text-xl font-semibold">Software Developer Intern</h3>
+                        <p class="text-gray-600">Jeev Lifeworks • Bengaluru, India • Jun 2022 - Jul 2022</p>
+                        <ul class="mt-2 list-disc list-inside text-gray-700">
+                            <li>Built a scalable Python microservice using NumPy and Pandas for a Dynamic Transformation Engine, handling large-scale data migration across diverse formats (databases, CSV, and Excel files).</li>
+                            <li>Optimized data transformation workflows by implementing batch processing and parallelization, reducing processing time and ensuring high efficiency for large-scale data pipelines.</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Full Stack Developer Intern at Reap Benefit -->
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <h3 class="text-xl font-semibold">Full Stack Developer Intern</h3>
+                        <p class="text-gray-600">Reap Benefit • Bengaluru, India • Jan 2022 - Mar 2022</p>
+                        <ul class="mt-2 list-disc list-inside text-gray-700">
+                            <li>Designed and implemented a PostgreSQL database to store air quality data, enabling real-time environmental monitoring.</li>
+                            <li>Developed an interactive website to display air quality data on a map using PHP and JavaScript, contributing to the deployment of environmental solutions for communities.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications Section -->
+            <h2 class="text-2xl font-semibold mt-8 text-center">Certifications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                <!-- CompTIA Security+ Certification -->
+                <a href="https://www.credly.com/badges/518f62b5-03d9-4d63-a172-12f7610291d6/" target="_blank" class="block">
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform transition hover:scale-105">
+                        <div class="flex items-center mb-3">
+                            <!-- CompTIA Logo Placeholder -->
+                            <div class="mr-3 flex items-center justify-center">
+                                <img src="comptia_logo.png" alt="CompTIA Logo" class="h-12">
+                            </div>
+                            <h3 class="text-xl font-semibold">CompTIA Security+</h3>
+                        </div>
+                        <p class="mt-2 text-gray-700">Validates baseline skills necessary to perform core security functions and pursue an IT security career</p>
+                    </div>
+                </a>
+                
+                <!-- ISC2 CC Certification -->
+                <a href="https://www.credly.com/badges/bcb9fd27-c28e-4744-b7f2-3c923f55f78b/" target="_blank" class="block">
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform transition hover:scale-105">
+                        <div class="flex items-center mb-3">
+                            <!-- ISC2 Logo Placeholder -->
+                            <div class="mr-3 flex items-center justify-center">
+                                <img src="isc2_logo.jpg" alt="ISC2 Logo" class="h-12">
+                            </div>
+                            <h3 class="text-xl font-semibold">ISC2 Certified in Cybersecurity (CC)</h3>
+                        </div>
+                        <p class="mt-2 text-gray-700">Entry-level certification demonstrating foundational knowledge and skills in cybersecurity principles</p>
                     </div>
                 </a>
             </div>
